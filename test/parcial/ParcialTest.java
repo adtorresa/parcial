@@ -125,6 +125,17 @@ public class ParcialTest {
         // TODO review the generated test code and remove the default call to fail.     
     }
     
+    @Test
+    public void volumenA() {
+        System.out.println("volumenA");
+        int R = 2;
+        int H = 3;
+        Parcial instance = new Parcial();
+        String expResult = "volumen: 37.69911184307752 area: 37.69911184307752";
+        String result = instance.areaVolumen(R, H);
+        Assert.assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.     
+    }
     
     
 }

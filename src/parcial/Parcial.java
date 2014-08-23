@@ -84,4 +84,14 @@ public class Parcial {
         hipo = Math.sqrt(hipo);
         return hipo;
     }
+    
+    public String areaVolumen(int R, int H){
+        String cad;
+        double volumen;
+        double area;
+        volumen = Math.PI * Math.pow(R, 2)* H;
+        area = (2* Math.PI ) * R * H;
+        cad = "volumen: "+volumen+" area: "+area;
+        return cad;
+    }
 }
