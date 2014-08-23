@@ -26,7 +26,7 @@ public class ParcialTest {
      * Test of mayor method, of class Parcial.
      */
     @Test
-    public void testMayorA() {
+    public void testMayor1() {
         System.out.println("mayorA");
         int A = 3;
         int B = 0;
@@ -38,7 +38,7 @@ public class ParcialTest {
     }
     
     @Test
-    public void testMayorB() {
+    public void testMayor2() {
         System.out.println("mayorB");
         int A = 0;
         int B = 1;
@@ -48,5 +48,60 @@ public class ParcialTest {
         Assert.assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.     
     }
+    
+    
+    @Test
+    public void mayorABC1() {
+        System.out.println("mayorABC1");
+        int A = 3;
+        int B = 2;
+        int C = 1;
+        Parcial instance = new Parcial();
+        String expResult = "A es el mayor";
+        String result = instance.mayor2(A, B, C);
+        Assert.assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.     
+    }
+    
+    
+    @Test
+    public void mayorABC2() {
+        System.out.println("mayorABC2");
+        int A = 2;
+        int B = 3;
+        int C = 1;
+        Parcial instance = new Parcial();
+        String expResult = "B es el mayor";
+        String result = instance.mayor2(A, B, C);
+        Assert.assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.     
+    }
+    
+    
+    @Test
+    public void mayorABC3() {
+        System.out.println("mayorABC3");
+        int A = 2;
+        int B = 1;
+        int C = 3;
+        Parcial instance = new Parcial();
+        String expResult = "C es el mayor";
+        String result = instance.mayor2(A, B, C);
+        Assert.assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.     
+    }
+    
+    @Test
+    public void suma() {
+        System.out.println("suma");
+        int N = 0;
+        Parcial instance = new Parcial();
+        String expResult = "suma";
+        String result = instance.suma(N);
+        Assert.assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.     
+    }    
+    
+    
     
 }

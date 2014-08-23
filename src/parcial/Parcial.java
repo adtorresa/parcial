@@ -41,4 +41,41 @@ public class Parcial {
         return cad;
         
     }
+    
+    public String mayor2 (int A, int B, int C){
+        String cad;
+        
+        if (A > B && A > C){
+            cad = ( "A es el mayor");
+        }
+        else {
+            if (B > A && B > C){
+                cad = ( "B es el mayor");
+            }
+            else{
+                cad = ( "C es el mayor");
+            }  
+        }
+        return cad;
+        
+    }
+    
+    
+    public String suma (int N ){
+        String cad;
+        int suma = 0;
+        while ( N  < 10 ){
+            N ++;
+            suma = suma + N;
+        }
+        if (N == 10){
+            cad = ( "suma");
+        }
+        else{
+            cad = ( "N es mayor");
+        }
+          
+        return cad;
+        
+    }
 }
