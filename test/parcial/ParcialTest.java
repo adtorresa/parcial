@@ -92,15 +92,38 @@ public class ParcialTest {
     }
     
     @Test
-    public void suma() {
-        System.out.println("suma");
+    public void suma1() {
+        System.out.println("suma1");
         int N = 0;
         Parcial instance = new Parcial();
         String expResult = "suma";
         String result = instance.suma(N);
         Assert.assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.     
-    }    
+    }
+    
+    @Test
+    public void suma2() {
+        System.out.println("suma2");
+        int N = 11;
+        Parcial instance = new Parcial();
+        String expResult = "N es mayor";
+        String result = instance.suma(N);
+        Assert.assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.     
+    }
+    
+    @Test
+    public void hipo() {
+        System.out.println("hipo");
+        int A = 2;
+        int B = 2;
+        Parcial instance = new Parcial();
+        double expResult = 2.0;
+        double result = instance.hipotenusa(A, B);
+        Assert.assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.     
+    }
     
     
     

@@ -75,7 +75,13 @@ public class Parcial {
             cad = ( "N es mayor");
         }
           
-        return cad;
-        
+        return cad;   
+    }
+    
+    public double hipotenusa(int A, int B){
+        double hipo;
+        hipo = A + B;            
+        hipo = Math.sqrt(hipo);
+        return hipo;
     }
 }
